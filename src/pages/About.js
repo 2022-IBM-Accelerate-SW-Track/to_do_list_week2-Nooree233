@@ -1,31 +1,36 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import "./About.css";
-import profile_pic from "../assets/profile_pic.jpg";
+import profile_pic_name from "../assets/profile_pic_name.jpg";
 
-export default class About extends Component {
-  render() {
-    return (
+export default class About extends Component{ 
+  render(){ 
+    return( 
       <div>
-        {/* <p>Design your About me page </p> */}
+        <p>
         <div class="split left">
           <div className="centered">
-            <img
-              className="profile_image"
-              src={profile_pic}
-              alt="Profile Pic"
-            ></img>
+            <img 
+              src={profile_pic_name}
+              className="profile_pic_name"
+              //Image goes here
+              alt="Profile Pic"              
+              ></img>
           </div>
-        </div>
+        </div></p>
         <div className="split right">
           <div className="centered">
-            <div className="name_title">Your Name</div>
+            <h3 className="name_title">Noor EL-Hawwat</h3>
             <div className="brief_description">
-              Tell us about yourself in a few sentences. Tell us your interests
-              and say a fun fact about yourself.
+              I am a rising junior majoring in Computer Science at Rutgers University-Newark. 
+              My interests are in front end programming and UI/UX design as my main goal is to 
+              be a web developer. An interesting fact about me is that I know over 50 digits of pi.
+              My favorite hobbies are drawing, cooking, and watching anime. I am looking forward to 
+              seeing what this program has in store for me!
             </div>
           </div>
+          
         </div>
-      </div>
-    );
+      </div>  
+    )
   }
 }
